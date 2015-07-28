@@ -3,7 +3,7 @@ require_relative 'spec_helper'
 describe 'home page' do
 
   it 'has a sign up button' do
-    # This does nothing, it should raise an error since there's no element
+    # This does nothing since watir lazy loads the element. it's not found until acted upon.
     home_page.sign_up_button_element
 
     home_page.goto
